@@ -6,10 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Condition extends Model
 {
-    //
+  protected $table = 'condition';
 
-
-	public function days() {
+	public function day() {
 		return $this->hasMany('App\Day');
 	}
 }
